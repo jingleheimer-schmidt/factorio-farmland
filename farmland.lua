@@ -14,45 +14,45 @@ local farmlandTile = {
       main =
       {
         {
-          picture = "__factorio-farmland__/graphics/stone-path/stone-path-1.png",
+          picture = "__factorio-farmland__/graphics/farmland-bits/farm-tile-1.png",
           count = 16,
           size = 1,
           hr_version =
           {
-            picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-1.png",
+            picture = "__factorio-farmland__/graphics/farmland-bits/hr-farm-tile-1.png",
             count = 16,
             size = 1,
             scale = 0.5
           }
-        },
-        {
-          picture = "__factorio-farmland__/graphics/stone-path/stone-path-2.png",
-          count = 16,
-          size = 2,
-          probability = 0.39,
-          hr_version =
-          {
-            picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-2.png",
-            count = 16,
-            size = 2,
-            probability = 0.39,
-            scale = 0.5
-          }
-        },
-        {
-          picture = "__factorio-farmland__/graphics/stone-path/stone-path-4.png",
-          count = 16,
-          size = 4,
-          probability = 1,
-          hr_version =
-          {
-            picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-4.png",
-            count = 16,
-            size = 4,
-            probability = 1,
-            scale = 0.5
-          }
-        }
+        }--,
+        -- {
+        --   picture = "__factorio-farmland__/graphics/stone-path/stone-path-2.png",
+        --   count = 16,
+        --   size = 2,
+        --   probability = 0.39,
+        --   hr_version =
+        --   {
+        --     picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-2.png",
+        --     count = 16,
+        --     size = 2,
+        --     probability = 0.39,
+        --     scale = 0.5
+        --   }
+        -- },
+        -- {
+        --   picture = "__factorio-farmland__/graphics/stone-path/stone-path-4.png",
+        --   count = 16,
+        --   size = 4,
+        --   probability = 1,
+        --   hr_version =
+        --   {
+        --     picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-4.png",
+        --     count = 16,
+        --     size = 4,
+        --     probability = 1,
+        --     scale = 0.5
+        --   }
+        -- }
       },
       inner_corner =
       {
