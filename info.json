@@ -1,0 +1,9 @@
+{
+	"name": "factorio-farmland",
+	"version": "0.0.1",
+	"title": "Farmland",
+	"description": "Adds farmland to plant crops, just like minecraft.",
+	"author": "asher_sky",
+	"dependencies": ["base >= 1.0.0"],
+	"factorio_version": "1.0"
+}
