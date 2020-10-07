@@ -1,9 +1,11 @@
+local farmlandTile = data.raw.tile["stone-path"]
+
 local farmlandTile = {
   type = "tile",
     name = "farmland-tile",
     order = "a-a-a",
     needs_correction = false,
-    minable = {mining_time = 0.1--, result = "stone-brick"},
+    minable = {mining_time = 0.1}, --, result = "stone-brick"
     mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg",volume = 0.8},
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 1.3,
@@ -118,17 +120,17 @@ local farmlandTile = {
         }
       }
     },
-    transitions = stone_path_transitions,
-    transitions_between_transitions = stone_path_transitions_between_transitions,
-
-    walking_sound = concrete_sounds,
-    build_sound = concrete_tile_build_sounds,
-    map_color={r=86, g=82, b=74},
-    scorch_mark_color = {r = 0.373, g = 0.307, b = 0.243, a = 1.000},
-    pollution_absorption_per_second = 0,
-    vehicle_friction_modifier = stone_path_vehicle_speed_modifier,
-
-    trigger_effect = tile_trigger_effects.stone_path_trigger_effect(),
+    -- transitions = stone_path_transitions,
+    -- transitions_between_transitions = stone_path_transitions_between_transitions,
+    --
+    -- walking_sound = concrete_sounds,
+    -- build_sound = concrete_tile_build_sounds,
+    -- map_color={r=86, g=82, b=74},
+    -- scorch_mark_color = {r = 0.373, g = 0.307, b = 0.243, a = 1.000},
+    -- pollution_absorption_per_second = 0,
+    -- vehicle_friction_modifier = stone_path_vehicle_speed_modifier,
+    --
+    -- trigger_effect = tile_trigger_effects.stone_path_trigger_effect(),
 }
 
 data:extend({
