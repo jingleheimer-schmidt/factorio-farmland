@@ -119,7 +119,7 @@ local farmlandTile = {
           scale = 0.5
         }
       }
-    },
+    }--,
     -- transitions = stone_path_transitions,
     -- transitions_between_transitions = stone_path_transitions_between_transitions,
     --
