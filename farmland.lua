@@ -26,35 +26,35 @@ local farmlandTile = {
             size = 1,
             scale = 0.5
           }
-        }--,
-        -- {
-        --   picture = "__factorio-farmland__/graphics/stone-path/stone-path-2.png",
-        --   count = 16,
-        --   size = 2,
-        --   probability = 0.39,
-        --   hr_version =
-        --   {
-        --     picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-2.png",
-        --     count = 16,
-        --     size = 2,
-        --     probability = 0.39,
-        --     scale = 0.5
-        --   }
-        -- },
-        -- {
-        --   picture = "__factorio-farmland__/graphics/stone-path/stone-path-4.png",
-        --   count = 16,
-        --   size = 4,
-        --   probability = 1,
-        --   hr_version =
-        --   {
-        --     picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-4.png",
-        --     count = 16,
-        --     size = 4,
-        --     probability = 1,
-        --     scale = 0.5
-        --   }
-        -- }
+        },
+        {
+          picture = "__factorio-farmland__/graphics/stone-path/stone-path-2.png",
+          count = 16,
+          size = 2,
+          probability = 0.39,
+          hr_version =
+          {
+            picture = "__factorio-farmland__/graphics/farmland-bits/hr-farm-tile-2.png",
+            count = 16,
+            size = 2,
+            probability = 0.39,
+            scale = 0.5
+          }
+        },
+        {
+          picture = "__factorio-farmland__/graphics/stone-path/stone-path-4.png",
+          count = 16,
+          size = 4,
+          probability = 1,
+          hr_version =
+          {
+            picture = "__factorio-farmland__/graphics/farmland-bits/hr-farm-tile-4.png",
+            count = 16,
+            size = 4,
+            probability = 1,
+            scale = 0.5
+          }
+        }
       },
       inner_corner =
       {
@@ -63,7 +63,7 @@ local farmlandTile = {
         tall = true,
         hr_version =
         {
-          picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-inner-corner.png",
+          picture = "__factorio-farmland__/graphics/farmland-bits/hr-farm-tile-inner-corner.png",
           count = 16,
           tall = true,
           scale = 0.5
@@ -71,12 +71,12 @@ local farmlandTile = {
       },
       outer_corner =
       {
-        picture = "__factorio-farmland__/graphics/stone-path/stone-path-outer-corner.png",
+        picture = "__factorio-farmland__/graphics/farmland-bits/hr-farm-tile-outer-corner.png",
         count = 8,
         tall = true,
         hr_version =
         {
-          picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-outer-corner.png",
+          picture = "__factorio-farmland__/graphics/farmland-bits/hr-farm-tile-outer-corner.png",
           count = 8,
           tall = true,
           scale = 0.5
@@ -89,7 +89,7 @@ local farmlandTile = {
         tall = true,
         hr_version =
         {
-          picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-side.png",
+          picture = "__factorio-farmland__/graphics/farmland-bits/hr-farm-tile-side.png",
           count = 16,
           tall = true,
           scale = 0.5
@@ -102,7 +102,7 @@ local farmlandTile = {
         tall = true,
         hr_version =
         {
-          picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-u.png",
+          picture = "__factorio-farmland__/graphics/farmland-bits/hr-farm-tile-u.png",
           count = 8,
           tall = true,
           scale = 0.5
@@ -114,7 +114,7 @@ local farmlandTile = {
         count = 4,
         hr_version =
         {
-          picture = "__factorio-farmland__/graphics/stone-path/hr-stone-path-o.png",
+          picture = "__factorio-farmland__/graphics/farmland-bits/hr-farm-tile-o.png",
           count = 4,
           scale = 0.5
         }
