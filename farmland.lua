@@ -1,5 +1,31 @@
 local farmlandTile = data.raw.tile["stone-path"]
 
+-- Some variables to reference base tiles
+local base_stone_path = data.raw.tile["stone-path"]
+local base_concrete = data.raw.tile["concrete"]
+local base_hazard_left = data.raw.tile["hazard-concrete-left"]
+local base_hazard_right = data.raw.tile["hazard-concrete-right"]
+local base_refined_concrete = data.raw.tile["refined-concrete"]
+local base_refined_hazard_left = data.raw.tile["refined-hazard-concrete-left"]
+local base_refined_hazard_right = data.raw.tile["refined-hazard-concrete-right"]
+
+local tile_layer = {
+	farmland = 60,
+	stone = 61,
+	concrete = 62,
+  hazard = 63,
+  refined = 64,
+  refined_hazard = 65
+}
+
+base_stone_path.layer = tile_layer.stone
+base_concrete.layer = tile_layer.concrete
+base_hazard_left.layer = tile_layer.hazard
+base_hazard_right.layer = tile_layer.hazard
+base_refined_concrete.layer = tile_layer.refined
+base_refined_hazard_left.layer = tile_layer.refined_hazard
+base_refined_hazard_right.layer = tile_layer.refined_hazard
+
 local farmlandTile = {
   type = "tile",
     name = "farmland-tile",
@@ -10,7 +36,7 @@ local farmlandTile = {
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 1.3,
     layer = 60,
-    decorative_removal_probability = 0.15,
+    decorative_removal_probability = 0.50,
     variants =
     {
       main =
@@ -127,7 +153,7 @@ local farmlandTile = {
     -- build_sound = concrete_tile_build_sounds,
     map_color={r=86, g=82, b=74},
     scorch_mark_color = {r = 0.373, g = 0.307, b = 0.243, a = 1.000},
-    pollution_absorption_per_second = 0
+    pollution_absorption_per_second = 0.016
     -- vehicle_friction_modifier = stone_path_vehicle_speed_modifier,
     --
     -- trigger_effect = tile_trigger_effects.stone_path_trigger_effect(),
