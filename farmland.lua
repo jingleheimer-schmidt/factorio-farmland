@@ -1,6 +1,6 @@
 local farmlandTile = data.raw.tile["stone-path"]
 
--- Some variables to reference base tiles
+-- Some variables to reference base tiles (thank u dectorio!!)
 local base_stone_path = data.raw.tile["stone-path"]
 local base_concrete = data.raw.tile["concrete"]
 local base_hazard_left = data.raw.tile["hazard-concrete-left"]
@@ -33,10 +33,11 @@ local farmlandTile = {
     needs_correction = false,
     minable = {mining_time = 0.1}, --, result = "stone-brick"
     mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg",volume = 0.8},
-    collision_mask = {"ground-tile"},
+    collision_mask = {"object-layer", "floor-layer", "water-tile"},
     walking_speed_modifier = 1.3,
     layer = 60,
     decorative_removal_probability = 0.50,
+    can_be_part_of_blueprint = "false",
     variants =
     {
       main =
